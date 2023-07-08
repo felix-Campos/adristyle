@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tarjeta Adristyle</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-color: blue;
+      color: white;
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .card {
+      max-width: 400px;
+      padding: 20px;
+      background-image: url(https://i.pinimg.com/originals/4f/4f/46/4f4f46f6614059a51f4b782dbe327502.jpg);
+      border-radius: 10px;
+      text-align: center;
+    }
+    
+    .logo {
+      animation: fadeLogo 2s infinite;
+    }
+    
+    @keyframes fadeLogo {
+      0% { opacity: 0; }
+      50% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+    
+    .contact-info {
+      margin-top: 20px;
+    }
+    
+    .contact-info a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+    
+    .social-icons {
+      margin-top: 20px;
+    }
+    
+    .social-icons a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 24px;
+    }
+    
+    .gallery {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .gallery img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      animation: slideIn 1s;
+    }
+    
+    @keyframes slideIn {
+      0% { transform: translateX(-100%); opacity: 0; }
+      100% { transform: translateX(0); opacity: 1; }
+    }
+    
+    .stylist-photo {
+      margin-top: 20px;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      
+    }
+    
+    @keyframes rotateImage {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo">
+      <img src="./assents/img/Imagen1.jpg" alt="Logo de la Peluquería" class="round-logo">
+    </div>
+    
+    <h2>Adriana Moreno</h2>
+    <img class="stylist-photo" src="./assents/img/WhatsApp Image 2023-07-08 at 11.29.17 AM.jpeg" alt="Foto de la Estilista">
+    <p>Estilista Profesiona</p>
+    
+    <div class="contact-info">
+      <p>Carmen 110 </p>
+      <a href="https://www.waze.com/">Ir a Waze</a>
+      <p></p>
+      <a href="https://wa.me/56975662182">WhatsApp</a>
+    </div>
+    
+    <div class="social-icons">
+      <a href="https://instagram.com/adristyle87?igshid=MzRlODBiNWFlZA=="><i class="fab fa-instagram"></i></a>
+    </div>
+    
+    <div class="agendamiento">
+      <p>Agendamiento</p>
+      <a href="https://instagram.com/adristyle87?igshid=MzRlO">Agendar cita</a>
+    </div>
+    
+    <div class="gallery">
+      <img src="./assents/img/imagen2.jpeg" alt="Imagen 1">
+      <img src="./assents/img/imagen3.jpeg" alt="Imagen 2">
+      <img src="./assents/img/imagen4.jpeg" alt="Imagen 3">
+      <img src="./assents/img/imagen5.jpeg" alt="Imagen 4">
+    </div>
+  </div>
+  
+  <!-- Agrega la referencia al archivo de estilos de Font Awesome -->
+  <script src="https://kit.fontawesome.com/ID_DE_TU_KIT.js" crossorigin="anonymous"></script>
+</body>
+</html>
